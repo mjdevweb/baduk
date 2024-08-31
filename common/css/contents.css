@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body{background-color: #f7f8fd;}
+.inner{width: 1310px; margin: auto; padding: 0 20px;}
+
+
+/* main */
+.main-contents{padding-bottom: 60px;}
+.main-contents section{padding-bottom: 70px;}
+.main-contents h3{padding-bottom: 35px; color: #222; font-size: 28px; font-weight: 600;}
+.main-contents h4{padding-bottom: 30px; color: #4d4d4d; font-size: 280x; font-weight: 500;}
+.main-rank{display: flex; justify-content: space-between;}
+.main-rank > div{width: calc((100% - 30px) /3);}
+
+.rank01{position: relative; overflow: hidden; height: calc(100% - 61px); padding:60px 16px 16px; background: url(../../images/contents/bg-rank.jpg) 0 0 / cover no-repeat; border-radius: 24px;}
+.rank01::before{content: ''; display: block; position: absolute; top:0; left: 0; width: 100%; height: 200px; background: url(../../images/contents/bg-rank.png) 50% 0 no-repeat; z-index: 1;}
+.rank01 ol{ display: flex; height: 100%; padding: 60px 16px 0; background: #fff url(../../images/contents/bg-rankbx.png) 50% 100% / calc(100% - 20px) no-repeat; border-radius: 24px; }
+.rank01 ol li{position: relative; flex:1; text-align: center; font-size: 15px; font-weight: 700; z-index: 1;}
+.rank01 ol li img{width:68px; height:68px; border-radius: 50%;}
+.rank01 ol li:first-child{padding-top:0;}
+.rank01 ol li:nth-child(2){padding-top:38px; order:-1;}
+.rank01 ol li:last-child{padding-top:65px;}
+
+
+.rank02{}
+.rank02 ol li{display: flex; }
+.rank02 ol li + li{border-top: 1px solid #dfe0e2;}
+.rank02 ol li a{position: relative; display: flex; width: 100%; padding:14px 8px; align-items: center;}
+.rank02 ol li a span{display: block; width: 40px; height: 40px; text-align: center; }
+.rank02 ol li:nth-child(1) a span{background: url(../../images/common/ico-rank1.png) 50% / cover no-repeat; font-size: 0;}
+.rank02 ol li:nth-child(2) a span{background: url(../../images/common/ico-rank2.png) 50% / cover no-repeat; font-size: 0;}
+.rank02 ol li:nth-child(3) a span{background: url(../../images/common/ico-rank3.png) 50% / cover no-repeat; font-size: 0;}
+.rank02 ol li:nth-child(4) a span{background: url(../../images/common/ico-rank4.png) 50% / cover no-repeat; font-size: 0;}
+.rank02 ol li a strong{position: absolute; right: 8px;}
+.rank02 ol li a:hover{text-decoration: none;}
+.rank02 ol li a > div{display: flex; }
+.rank02 ol li figure{padding:0 17px; }
+.rank02 ol li img{width: 60px; border-radius: 12px;}
+.rank02 ol li dt{font-size: 18px;}
+.rank02 ol li dd{color:#1b88ff; font-size: 16px;}
+.rank02.rank03 ol li dd{color:#ff8210; font-size: 16px;}
+
+/* 중계실 BIC MATCH */
+.main-match-wrap, .main-match{display: flex; justify-content: space-between;}
+.main-match-bx{width:calc(100% - 330px); justify-content: space-between;}
+.main-match > div{width: 32%; padding-top:100px; text-align: center;}
+.main-match > div:nth-child(1){background: url(../../images/contents/img-match1.png) 50% -40px / 100% no-repeat;}
+.main-match > div:nth-child(2){background: url(../../images/contents/img-match2.png) 50% -40px / 100% no-repeat;}
+.main-match > div:nth-child(3){background: url(../../images/contents/img-match3.png) 50% -40px / 100% no-repeat;}
+.main-match > div ul{display: flex; margin-bottom:30px; justify-content: space-between}
+.main-match > div ul li{width: calc(50% - 10px); }
+.main-match > div a{display: inline-block; min-width: 150px; padding: 5px 40px; color: #fff; font-size: 18px; font-weight: 500; border-radius: 99px;}
+.main-match > div li img{width:40px; height:40px;border-radius: 99px; object-fit: cover; border:2px solid #cb893b;}
+.main-match > div li p{padding-top: 20px; font-size: 14px; font-weight: 500;}
+.match01 a{background: url(../../images/contents/bg-btn1.png) 50% / cover;}
+.match02 a{background: url(../../images/contents/bg-btn2.png) 50% / cover;}
+.match03 a{background: url(../../images/contents/bg-btn3.png) 50% / cover;}
+.main-notice{width:300px;}
+
+
+/* MAIN > AI 학습 */
+.main-ai{display: flex; justify-content: space-between;}
+.main-ai li{width: calc(25% - 10px); background-color: #fff; border-radius: 24px; background: url(../../images/contents/bg-main-ai1.png) 0 0 / cover no-repeat;}
+.main-ai li:nth-child(2){background-image: url(../../images/contents/bg-main-ai2.png);}
+.main-ai li:nth-child(3){background-image: url(../../images/contents/bg-main-ai3.png);}
+.main-ai li:nth-child(4){background-image: url(../../images/contents/bg-main-ai4.png);}
+.main-ai li a{display: block; height: 210px; padding:38px; background: url(../../images/contents/btn-main-ai.png) 38px 136px / 40px no-repeat;}
+.main-ai li strong{font-size: 24px; font-weight: 500;}
+
+/* MAIN > AI 학습 */
+.main-banner{}
+.main-banner ul{display: flex; justify-content: space-between;}
+.main-banner li{width: calc(50% - 10px);}
+.main-banner li img{border-radius:20px;}
+
+/* MAIN > 뉴스,영상 */
+.main-media {display: flex; justify-content: space-between;}
+.main-media > div{width: calc(50% - 10px);}
+.main-media ul{display: flex; justify-content: space-between;}
+.main-media ul li{overflow: hidden; width:calc(50% - 10px); border-radius: 8px; border:1px solid #e4e4e4;}
+.main-media ul li figcaption{padding:15px 20px;}
+.main-media ul li img{width: 100%; height: 170px; object-fit: cover;}
+
+
+
+/* footer */
+#inFooter{color: #999; background-color: #2a2a2a; border:1px solid red;}
+#inFooter a{color: #999; }
+.foot-link{display: flex; padding: 40px 20px; align-items: center}
+.foot-link ul{display: flex;}
+.foot-link li{padding-left: 80px; font-size: 18px;}
+.foot-info{padding:40px 0 60px; font-size: 16px; border-top: 1px solid #3d3d3d;}
+.foot-info ul{display: flex; }
+.foot-info ul li{padding-right: 13px;}
+.foot-info ul address{padding-right: 50px;}
+.copy{padding-top: 10px;}
