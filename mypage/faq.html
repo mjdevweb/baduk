@@ -30,6 +30,7 @@
 	<script type="text/javascript" src="../common/js/script.ui.js"></script>
 </head>
 <body>
+  <!-- 헤더 } -->
 	<header>
 		<div class="inner">
 			<a href="../" class="logo"><img src="../images/common/logo.png" alt="play바둑"></a>
@@ -44,19 +45,42 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">AI 학습</a>
+					<span><a href="#">AI 학습</a></span>
+					<ul class="dep2">
+						<li><a href="#">AI 분석</a></li>
+						<li><a href="#">AI 기보탐색</a></li>
+						<li><a href="#">AI 포석 전술 연구</a></li>
+						<li><a href="#">AI 레슨</a></li>
+						<li><a href="#">문제풀이</a></li>
+						<li><a href="#">AI 기력테스트</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">PLAY GROUND</a>
+				<li>
+					<span><a href="#">PLAY GROUND</a></span>
+					<ul class="dep2">
+						<li><a href="#">블루스팟 맞히기</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">랭킹</a>
+				<li>
+					<span><a href="#">랭킹</a></span>
+					<ul class="dep2">
+						<li><a href="#">랭킹</a></li>
+						<li><a href="#">명예의 전당</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">상점</a>
+				<li>
+					<span><a href="#">상점</a></span>
+					<ul class="dep2">
+						<li><a href="#">구독</a></li>
+						<li><a href="#">상점</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="../news/news.html">뉴스/영상</>
+				<li>
+					<span><a href="../news/news.html">뉴스/영상</a></span>
+					<ul class="dep2">
+						<li><a href="../news/news.html">바둑 뉴스</a></li>
+						<li><a href="../news/mediAhtml">관련 영상</a></li>
+					</ul>
 				</li>
 			</ul>
 			<div class="header-side">
@@ -81,22 +105,16 @@
 			</div>
 		</div>
 	</header>
+  <!-- 헤더 } -->
 
-	<main class="sub-contents sub-news">
+	<main class="sub-contents sub-notice">
 		<section class="inner">
       <div class="sub-title">
-        <h2>바둑뉴스</h2>
+        <h2>FAQ</h2>
 				<p>짧은 설명 문구</p>
 			</div>
       <div class="sub-wrap">
-        
         <article>
-					<ul class="tab-top">
-						<li><a href="#" class="on">전체</a></li>
-						<li><a href="#">국내</a></li>
-						<li><a href="#">세계</a></li>
-						<li><a href="#">해외</a></li>
-					</ul>					
           <!-- 검색 { -->
           <form>
             <div class="board-head">
@@ -112,26 +130,58 @@
               </div>
             </div><!-- .boardHead -->
           </form>
-          <!-- 검색 } -->
-
-          <!-- 목록 { -->
-          <div>
-            <ul class="tab-in">
-              <li><a href="#" class="on">올패스</a></li>
-              <li><a href="#">프리미엄</a></li>
-              <li><a href="#">베이직</a></li>
-            </ul>
-            <div>
-
-            </div>
+          <!-- 검색 } -->     
+             
+          <!-- faq목록 { -->
+          <div class="board-list board-faq">
+						<ul class="folder-list faq">
+							<li>
+								<p class="faq-q"><strong class="q">Q</strong>월간 유료회원은 어떤 혜택이 있나요?</p>
+								<div class="faq-a">
+									<strong class="a">A</strong>
+									<div>
+										월간 유료회원의 혜택은… 더 자세한 내용은 aIdusrnth@naver.com 으로 문의 주세요.
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="faq-q"><strong class="q">Q</strong>월간 유료회원은 어떤 혜택이 있나요?</p>
+								<div class="faq-a">
+									<strong class="a">A</strong>
+									<div>
+										월간 유료회원의 혜택은… 더 자세한 내용은 aIdusrnth@naver.com 으로 문의 주세요.
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="faq-q"><strong class="q">Q</strong>월간 유료회원은 어떤 혜택이 있나요?</p>
+								<div class="faq-a">
+									<strong class="a">A</strong>
+									<div>
+										월간 유료회원의 혜택은… 더 자세한 내용은 aIdusrnth@naver.com 으로 문의 주세요.
+									</div>
+								</div>
+							</li>
+						</ul>
           </div>
           <!-- 목록 } -->
 
+          <div class="pagination">
+            <ul>
+              <li class="prev-first"><a href="#">처음</a></li>
+              <li class="prev"><a href="#">이전</a></li>
+              <li class="active"><a href="">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li class="next"><a href="#">다음</a></li>
+              <li class="next-last"><a href="#">맨끝</a></li>
+            </ul>
+          </div>
         </article>
 			</div>
     </section>
 	</main>
-
+  
   <!-- 푸터 { -->
 	<footer id="inFooter">
 		<div class="inner foot-link">

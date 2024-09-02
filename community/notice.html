@@ -30,6 +30,7 @@
 	<script type="text/javascript" src="../common/js/script.ui.js"></script>
 </head>
 <body>
+  <!-- 헤더 } -->
 	<header>
 		<div class="inner">
 			<a href="../" class="logo"><img src="../images/common/logo.png" alt="play바둑"></a>
@@ -104,74 +105,101 @@
 			</div>
 		</div>
 	</header>
+  <!-- 헤더 } -->
 
-	<main class="sub-contents sub-news">
+	<main class="sub-contents sub-notice">
 		<section class="inner">
       <div class="sub-title">
-        <h2>바둑뉴스</h2>
+        <h2>공지사항</h2>
 				<p>짧은 설명 문구</p>
 			</div>
       <div class="sub-wrap">
-         <article>
-					<!-- 검색 { -->
-					<form>
-						<div class="board-head">
-							<select id="search_key" name="search_key" class="search-field" title="검색 항목">
-								<option value="">전체</option>
-								<option value="">제목</option>
-								<option value="">내용</option>
-								<option value="">대회명</option>
-							</select>
-							<div class="">
-								<input type="text" id="search_val" class="search-txt" name="search_val" placeholder="검색어 입력" title="검색어 입력" value="">
-								<button type="button" class="search-btn" title="검색">검색</button>
-							</div>
-						</div><!-- .boardHead -->
-					</form>
-					<!-- 검색 } -->			
-
-          <!-- 게시판tab { -->
-					<ul class="tab-top">
-						<li><a href="#" class="on">구독</a></li>
-						<li><a href="#">아이템</a></li>
-						<li><a href="#">코인</a></li>
-					</ul>
-          <!-- 게시판tab } -->
-
+        <article>
+          <!-- 검색 { -->
+          <form>
+            <div class="board-head">
+              <select id="search_key" name="search_key" class="search-field" title="검색 항목">
+                <option value="">전체</option>
+                <option value="">제목</option>
+                <option value="">내용</option>
+                <option value="">대회명</option>
+              </select>
+              <div class="">
+                <input type="text" id="search_val" class="search-txt" name="search_val" placeholder="검색어 입력" title="검색어 입력" value="">
+                <button type="button" class="search-btn" title="검색">검색</button>
+              </div>
+            </div><!-- .boardHead -->
+          </form>
+          <!-- 검색 } -->     
+             
           <!-- 목록 { -->
-          <div class="board-list board-gallery">
-            <ul class="">
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-            </ul>
+          <div class="board-list board-basic">
+            <table width="100%"><!-- 목록10개 -->
+              <colgroup>
+                <col style="width: 10%;">	<!-- 번호 -->
+                <col style="width: auto;">	<!-- 제목 -->
+                <col style="width: 120px;">	<!-- 날짜 -->
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>날짜</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-num"><span class="badge-notice">공지</span></td>
+                  <td class="td-subject"><div><a href="view.html">플레이바둑 사이트가 오픈되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">9</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">8</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">7</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">6</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">5</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">4</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">3</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">2</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+                <tr>
+                  <td class="td-num">1</td>
+                  <td class="td-subject"><div><a href="view.html">공지사항 등록되었습니다</a></div></td>
+                  <td class="td-date">2024-05-01</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <!-- 목록 } -->
 
@@ -186,7 +214,6 @@
               <li class="next-last"><a href="#">맨끝</a></li>
             </ul>
           </div>
-
         </article>
 			</div>
     </section>

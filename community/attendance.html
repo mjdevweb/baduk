@@ -105,88 +105,68 @@
 		</div>
 	</header>
 
-	<main class="sub-contents sub-news">
+	<main class="sub-contents sub-attendance">
 		<section class="inner">
       <div class="sub-title">
-        <h2>바둑뉴스</h2>
-				<p>짧은 설명 문구</p>
-			</div>
+        <img src="/images/common/attendance.png" alt="출석체크"/>
+			</div>      
       <div class="sub-wrap">
-         <article>
-					<!-- 검색 { -->
-					<form>
-						<div class="board-head">
-							<select id="search_key" name="search_key" class="search-field" title="검색 항목">
-								<option value="">전체</option>
-								<option value="">제목</option>
-								<option value="">내용</option>
-								<option value="">대회명</option>
-							</select>
-							<div class="">
-								<input type="text" id="search_val" class="search-txt" name="search_val" placeholder="검색어 입력" title="검색어 입력" value="">
-								<button type="button" class="search-btn" title="검색">검색</button>
-							</div>
-						</div><!-- .boardHead -->
-					</form>
-					<!-- 검색 } -->			
+        <article>
 
-          <!-- 게시판tab { -->
-					<ul class="tab-top">
-						<li><a href="#" class="on">구독</a></li>
-						<li><a href="#">아이템</a></li>
-						<li><a href="#">코인</a></li>
-					</ul>
-          <!-- 게시판tab } -->
-
-          <!-- 목록 { -->
-          <div class="board-list board-gallery">
-            <ul class="">
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-              <li class="gallery-item">
-                <a href="view.html" class="item-img"><img src="../images/temp/thum.jpg" alt="뉴스타이틀"></a>
-                <a href="view.html" class="item-desc">
-                  <dl>
-                    <dt class="tit">[농심신라면배] 농심신라면배 개최!</dt>
-                    <dd class="txt">농심신라면배가 5월 20일에 개최된다.</dd>
-                  </dl>
-                  <p><span>2024-05-01</span><span>조회수 8,760회</span></p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- 목록 } -->
-
-          <div class="pagination">
-            <ul>
-              <li class="prev-first"><a href="#">처음</a></li>
-              <li class="prev"><a href="#">이전</a></li>
-              <li class="active"><a href="">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li class="next"><a href="#">다음</a></li>
-              <li class="next-last"><a href="#">맨끝</a></li>
-            </ul>
-          </div>
-
+          <table class="calendar" width="100%">
+            <caption>10월 달력</caption>
+              <tbody>
+                <tr>
+                  <!-- pick_date 클래스
+                    선택불가 : disabled
+                    출석체크 : checked
+                    지급완료 : completed
+                    응모완료 : apply
+                   -->
+                  <td colspan="4">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><button class="pick_date" data-selected-day="20211001" value="">1</button></td>
+                  <td><button class="pick_date" data-selected-day="20211002" value="">2</button></td>
+                </tr>
+                <tr>
+                  <td><button class="pick_date" data-selected-day="20211003" value="">3</button></td>
+                  <td><button class="pick_date" data-selected-day="20211004" value="">4</button></td>				    	
+                  <td><button class="pick_date" data-selected-day="20211005" value="">5</button></td>
+                  <td><button class="pick_date" data-selected-day="20211006" value="">6</button></td>
+                  <td><button class="pick_date" data-selected-day="20211007" value="">7</button></td>
+                  <td><button class="pick_date" data-selected-day="20211008" value="">8</button></td>
+                  <td><button class="pick_date" data-selected-day="20211009" value="">9</button></td>
+                </tr>
+                <tr>
+                  <td><button class="pick_date" data-selected-day="20211010" value="">10</button></td>
+                  <td><button class="pick_date" data-selected-day="20211011" value="">11</button></td>				    	
+                  <td><button class="pick_date" data-selected-day="20211012" value="">12</button></td>
+                  <td><button class="pick_date" data-selected-day="20211013" value="">13</button></td>
+                  <td><button class="pick_date" data-selected-day="20211014" value="">14</button></td>
+                  <td><button class="pick_date" data-selected-day="20211015" value="">15</button></td>
+                  <td><button class="pick_date" data-selected-day="20211016" value="">16</button></td>
+                </tr>
+                <tr>
+                  <td><button class="pick_date" data-selected-day="20211017" value="">17</button></td>
+                  <td><button class="pick_date" data-selected-day="20211018" value="">18</button></td>
+                  <td><button class="pick_date" data-selected-day="20211019" value="">19</button></td>
+                  <td><button class="pick_date" data-selected-day="20211020" value="">20</button></td>
+                  <td><button class="pick_date" data-selected-day="20211021" value="">21</button></td>
+                  <td><button class="pick_date" data-selected-day="20211022" value="">22</button></td>
+                  <td><button class="pick_date" data-selected-day="20211023" value="">23</button></td>
+                </tr>
+                <tr>
+                  <td><button class="pick_date" data-selected-day="20211024" value="">24</button></td>
+                  <td><button class="pick_date" data-selected-day="20211025" value="">25</button></td>
+                  <td><button class="pick_date" data-selected-day="20211026" value="">26</button></td>
+                  <td><button class="pick_date" data-selected-day="20211027" value="">27</button></td>
+                  <td><button class="pick_date" data-selected-day="20211028" value="">28</button></td>
+                  <td><button class="pick_date" data-selected-day="20211029" value="">29</button></td>
+                  <td><button class="pick_date" data-selected-day="20211030" value="">30</button></td>
+                </tr>
+              </tbody>
+            </table>
+          
         </article>
 			</div>
     </section>

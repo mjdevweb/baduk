@@ -44,19 +44,42 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">AI 학습</a>
+					<span><a href="#">AI 학습</a></span>
+					<ul class="dep2">
+						<li><a href="#">AI 분석</a></li>
+						<li><a href="#">AI 기보탐색</a></li>
+						<li><a href="#">AI 포석 전술 연구</a></li>
+						<li><a href="#">AI 레슨</a></li>
+						<li><a href="#">문제풀이</a></li>
+						<li><a href="#">AI 기력테스트</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">PLAY GROUND</a>
+				<li>
+					<span><a href="#">PLAY GROUND</a></span>
+					<ul class="dep2">
+						<li><a href="#">블루스팟 맞히기</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">랭킹</a>
+				<li>
+					<span><a href="#">랭킹</a></span>
+					<ul class="dep2">
+						<li><a href="#">랭킹</a></li>
+						<li><a href="#">명예의 전당</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="#">상점</a>
+				<li>
+					<span><a href="#">상점</a></span>
+					<ul class="dep2">
+						<li><a href="#">구독</a></li>
+						<li><a href="#">상점</a></li>
+					</ul>
 				</li>
-				<li>					
-					<a href="../news/news.html">뉴스/영상</>
+				<li>
+					<span><a href="../news/news.html">뉴스/영상</a></span>
+					<ul class="dep2">
+						<li><a href="../news/news.html">바둑 뉴스</a></li>
+						<li><a href="../news/media.html">관련 영상</a></li>
+					</ul>
 				</li>
 			</ul>
 			<div class="header-side">
@@ -82,56 +105,58 @@
 		</div>
 	</header>
 
-	<main class="sub-contents sub-news">
+	<main class="sub-contents sub-notice">
 		<section class="inner">
       <div class="sub-title">
-        <h2>바둑뉴스</h2>
+        <h2>공지사항</h2>
 				<p>짧은 설명 문구</p>
 			</div>
       <div class="sub-wrap">
-        
         <article>
-					<ul class="tab-top">
-						<li><a href="#" class="on">전체</a></li>
-						<li><a href="#">국내</a></li>
-						<li><a href="#">세계</a></li>
-						<li><a href="#">해외</a></li>
-					</ul>					
-          <!-- 검색 { -->
-          <form>
-            <div class="board-head">
-              <select id="search_key" name="search_key" class="search-field" title="검색 항목">
-                <option value="">전체</option>
-                <option value="">제목</option>
-                <option value="">내용</option>
-                <option value="">대회명</option>
-              </select>
-              <div class="">
-                <input type="text" id="search_val" class="search-txt" name="search_val" placeholder="검색어 입력" title="검색어 입력" value="">
-                <button type="button" class="search-btn" title="검색">검색</button>
-              </div>
-            </div><!-- .boardHead -->
-          </form>
-          <!-- 검색 } -->
 
-          <!-- 목록 { -->
-          <div>
-            <ul class="tab-in">
-              <li><a href="#" class="on">올패스</a></li>
-              <li><a href="#">프리미엄</a></li>
-              <li><a href="#">베이직</a></li>
-            </ul>
-            <div>
-
-            </div>
+          <div class="board-view ">
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="board-view-head">
+                      <h3><p><span class="badge-notice">공지</span> 플레이바둑 사이트가 오픈되었습니다</p></h3>
+                      <ul>
+                        <li>관리자</li>
+                        <li>2024-05-01</li>
+                        <li>조회수 8,760회</li>
+                      </ul>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <div class="view-detail">
+      
+                    <!-- 에디터영역 -->
+                    게시판 상세 내용 입니다 플레이바둑 사이트가 오픈되었습니다 농심신라면배가 5월 20일에 개최된다.
+                    <!-- 에디터영역 -->
+      
+                  </div><!-- .view-detail -->
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div><!-- .board-view -->
+      
+          <div class="board-foot-wrap">
+            <a href="news.html" class="btn btn-line"><i class="ic ic-next"></i> 다음 글</a>
+            <a href="news.html" class="btn btn-line">이전 글 <i class="ic ic-prev"></i></a>
+            <a href="notice.html" class="btn btn-color">목록</a>
           </div>
-          <!-- 목록 } -->
 
         </article>
 			</div>
     </section>
 	</main>
-
+  
   <!-- 푸터 { -->
 	<footer id="inFooter">
 		<div class="inner foot-link">

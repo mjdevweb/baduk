@@ -14,9 +14,13 @@ $(function(){
     fadeEffect: {
     crossFade: true
     },
+    navigation: {
+      nextEl: ".main-visual-sec .button-next",
+      prevEl: ".main-visual-sec .button-prev",
+    },    
     pagination: {
-    el: ".main-visual-sec .swiper-pagination",
-    clickable: true
+      el: ".main-visual-sec .swiper-pagination",
+      clickable: true
     },
   });  
 });
