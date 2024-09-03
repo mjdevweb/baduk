@@ -30,56 +30,69 @@
 	<script type="text/javascript" src="../common/js/script.ui.js"></script>
 </head>
 <body>
+	<!-- 헤더 } -->
 	<header>
 		<div class="inner">
 			<a href="../" class="logo"><img src="../images/common/logo.png" alt="play바둑"></a>
 			<ul class="header-nav">
 				<li>
 					<span><a href="#">PLAY MODE</a></span>
-					<ul class="dep2">
-						<li><a href="#">레이팅 대국</a></li>
-						<li><a href="#">영웅 대결</a></li>
-						<li><a href="#">AI 대결</a></li>
-						<li><a href="#">중계실</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="#">레이팅 대국</a></li>
+							<li><a href="#">영웅 대결</a></li>
+							<li><a href="#">AI 대결</a></li>
+							<li><a href="#">중계실</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
 					<span><a href="#">AI 학습</a></span>
-					<ul class="dep2">
-						<li><a href="#">AI 분석</a></li>
-						<li><a href="#">AI 기보탐색</a></li>
-						<li><a href="#">AI 포석 전술 연구</a></li>
-						<li><a href="#">AI 레슨</a></li>
-						<li><a href="#">문제풀이</a></li>
-						<li><a href="#">AI 기력테스트</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="#">AI 분석</a></li>
+							<li><a href="#">AI 기보탐색</a></li>
+							<li><a href="#">AI 포석 전술 연구</a></li>
+							<li><a href="#">AI 레슨</a></li>
+							<li><a href="#">문제풀이</a></li>
+							<li><a href="#">AI 기력테스트</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
 					<span><a href="#">PLAY GROUND</a></span>
-					<ul class="dep2">
-						<li><a href="#">블루스팟 맞히기</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="#">블루스팟 맞히기</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
 					<span><a href="#">랭킹</a></span>
-					<ul class="dep2">
-						<li><a href="#">랭킹</a></li>
-						<li><a href="#">명예의 전당</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="#">랭킹</a></li>
+							<li><a href="#">명예의 전당</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
 					<span><a href="#">상점</a></span>
-					<ul class="dep2">
-						<li><a href="#">구독</a></li>
-						<li><a href="#">상점</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="#">구독</a></li>
+							<li><a href="#">상점</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
 					<span><a href="../news/news.html">뉴스/영상</a></span>
-					<ul class="dep2">
-						<li><a href="../news/news.html">바둑 뉴스</a></li>
-						<li><a href="../news/media.html">관련 영상</a></li>
-					</ul>
+					<div class="dep2">
+						<ul>
+							<li><a href="../news/news.html">바둑 뉴스</a></li>
+							<li><a href="../news/media.html">관련 영상</a></li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 			<div class="header-side">
@@ -104,69 +117,132 @@
 			</div>
 		</div>
 	</header>
+	<!-- 헤더 } -->
 
 	<main class="sub-contents sub-attendance">
 		<section class="inner">
-      <div class="sub-title">
-        <img src="/images/common/attendance.png" alt="출석체크"/>
+      <div class="sub-title tcenter">
+        <h2><img src="../images/contents/tit-attendance.png" alt="출석체크"/></h2>
 			</div>      
-      <div class="sub-wrap">
+      <div class="sub-wrap promotion attend">
         <article>
-
+					<div class="tit-attendance">
+						<h3>7월 출석체크</h3>
+						<div>
+							<p><span>내 출석횟수</span>  7회 </p>
+							<p><span>내 골드현황</span>  1000G</p>
+						</div>
+					</div>
           <table class="calendar" width="100%">
-            <caption>10월 달력</caption>
+            <caption>7월 달력</caption>
+							<thead>
+								<tr>
+									<td>SUN</td>
+									<td>MON</td>
+									<td>TUE</td>
+									<td>WED</td>
+									<td>THU</td>
+									<td>FRI</td>
+									<td>SAT</td>
+								</tr>
+							</thead>
               <tbody>
                 <tr>
-                  <!-- pick_date 클래스
+                  <!-- pick-date 클래스
                     선택불가 : disabled
-                    출석체크 : checked
-                    지급완료 : completed
-                    응모완료 : apply
+                    출석체크 : checked30(3만), checked50(5만), ...
+                    지급완료 : checked30 + completed(5코인), ...
                    -->
-                  <td colspan="4">&nbsp;</td>
                   <td>&nbsp;</td>
-                  <td><button class="pick_date" data-selected-day="20211001" value="">1</button></td>
-                  <td><button class="pick_date" data-selected-day="20211002" value="">2</button></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><p>1</p><button class="pick-date checked30" data-selected-day="20240701" value="">1</button></td>
+                  <td><p>2</p><button class="pick-date checked30" data-selected-day="20240702" value="">2</button></td>
                 </tr>
                 <tr>
-                  <td><button class="pick_date" data-selected-day="20211003" value="">3</button></td>
-                  <td><button class="pick_date" data-selected-day="20211004" value="">4</button></td>				    	
-                  <td><button class="pick_date" data-selected-day="20211005" value="">5</button></td>
-                  <td><button class="pick_date" data-selected-day="20211006" value="">6</button></td>
-                  <td><button class="pick_date" data-selected-day="20211007" value="">7</button></td>
-                  <td><button class="pick_date" data-selected-day="20211008" value="">8</button></td>
-                  <td><button class="pick_date" data-selected-day="20211009" value="">9</button></td>
+                  <td><p>3</p><button class="pick-date checked30" data-selected-day="20240703" value="">3</button></td>
+                  <td><p>4</p><button class="pick-date checked30 completed " data-selected-day="20240704" value="">4</button></td>				    	
+                  <td><p>5</p><button class="pick-date checked50" data-selected-day="20240705" value="">5</button></td>
+                  <td><p>6</p><button class="pick-date checked50" data-selected-day="20240706" value="">6</button></td>
+                  <td><p>7</p><button class="pick-date checked50 completed" data-selected-day="20240707" value="">7</button></td>
+                  <td><p>8</p><button class="pick-date checked70" data-selected-day="20240708" value="">8</button></td>
+                  <td><p>9</p><button class="pick-date checked70" data-selected-day="20240709" value="">9</button></td>
                 </tr>
                 <tr>
-                  <td><button class="pick_date" data-selected-day="20211010" value="">10</button></td>
-                  <td><button class="pick_date" data-selected-day="20211011" value="">11</button></td>				    	
-                  <td><button class="pick_date" data-selected-day="20211012" value="">12</button></td>
-                  <td><button class="pick_date" data-selected-day="20211013" value="">13</button></td>
-                  <td><button class="pick_date" data-selected-day="20211014" value="">14</button></td>
-                  <td><button class="pick_date" data-selected-day="20211015" value="">15</button></td>
-                  <td><button class="pick_date" data-selected-day="20211016" value="">16</button></td>
+                  <td><p>10</p><button class="pick-date checked70 completed" data-selected-day="20240710" value="">10</button></td>
+                  <td><p>11</p><button class="pick-date checked90" data-selected-day="20240711" value="">11</button></td>				    	
+                  <td><p>12</p><button class="pick-date checked90" data-selected-day="20240712" value="">12</button></td>
+                  <td><p>13</p><button class="pick-date checked90 completed" data-selected-day="20240713" value="">13</button></td>
+                  <td><p>14</p><button class="pick-date checked100" data-selected-day="20240714" value="">14</button></td>
+                  <td><p>15</p><button class="pick-date checked100" data-selected-day="20240715" value="">15</button></td>
+                  <td><p>16</p><button class="pick-date checked100 completed" data-selected-day="20240716" value="">16</button></td>
                 </tr>
                 <tr>
-                  <td><button class="pick_date" data-selected-day="20211017" value="">17</button></td>
-                  <td><button class="pick_date" data-selected-day="20211018" value="">18</button></td>
-                  <td><button class="pick_date" data-selected-day="20211019" value="">19</button></td>
-                  <td><button class="pick_date" data-selected-day="20211020" value="">20</button></td>
-                  <td><button class="pick_date" data-selected-day="20211021" value="">21</button></td>
-                  <td><button class="pick_date" data-selected-day="20211022" value="">22</button></td>
-                  <td><button class="pick_date" data-selected-day="20211023" value="">23</button></td>
+                  <td><p>17</p><button class="pick-date" data-selected-day="20240717" value="">17</button></td>
+                  <td><p>18</p><button class="pick-date" data-selected-day="20240718" value="">18</button></td>
+                  <td><p>19</p><button class="pick-date" data-selected-day="20240719" value="">19</button></td>
+                  <td><p>20</p><button class="pick-date" data-selected-day="20240720" value="">20</button></td>
+                  <td><p>21</p><button class="pick-date" data-selected-day="20240721" value="">21</button></td>
+                  <td><p>22</p><button class="pick-date" data-selected-day="20240722" value="">22</button></td>
+                  <td><p>23</p><button class="pick-date" data-selected-day="20240723" value="">23</button></td>
                 </tr>
                 <tr>
-                  <td><button class="pick_date" data-selected-day="20211024" value="">24</button></td>
-                  <td><button class="pick_date" data-selected-day="20211025" value="">25</button></td>
-                  <td><button class="pick_date" data-selected-day="20211026" value="">26</button></td>
-                  <td><button class="pick_date" data-selected-day="20211027" value="">27</button></td>
-                  <td><button class="pick_date" data-selected-day="20211028" value="">28</button></td>
-                  <td><button class="pick_date" data-selected-day="20211029" value="">29</button></td>
-                  <td><button class="pick_date" data-selected-day="20211030" value="">30</button></td>
+                  <td><p>24</p><button class="pick-date" data-selected-day="20240724" value="">24</button></td>
+                  <td><p>25</p><button class="pick-date" data-selected-day="20240725" value="">25</button></td>
+                  <td><p>26</p><button class="pick-date" data-selected-day="20240726" value="">26</button></td>
+                  <td><p>27</p><button class="pick-date" data-selected-day="20240727" value="">27</button></td>
+                  <td><p>28</p><button class="pick-date" data-selected-day="20240728" value="">28</button></td>
+                  <td><p>29</p><button class="pick-date" data-selected-day="20240729" value="">29</button></td>
+                  <td><p>30</p><button class="pick-date" data-selected-day="20240730" value="">30</button></td>
+                </tr>
+                <tr>
+                  <td><p>31</p><button class="pick-date" data-selected-day="20240724" value="">24</button></td>
+                  <td colspan="6"></td>
                 </tr>
               </tbody>
             </table>
-          
+						<div class="attend-notice">
+							<h4><strong>누적 출석<br/> 획득 안내</strong> <span>(연속 출석시 보상지급)</span></h4>
+							<div>
+								<h5>획득 골드</h5>
+								<ul>
+									<li>
+										<span>1~6일차</span><span>30,000골드</span>
+									</li>
+									<li>
+										<span>8~13일차</span><span>50,000골드</span>
+									</li>
+									<li>
+										<span>15~20일차</span><span>70,000골드</span>
+									</li>
+									<li>
+										<span>22~27일차</span><span>90,000골드</span>
+									</li>
+									<li>
+										<span>29~31일차</span><span>100,000골드</span>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h5>획득 코인</h5>
+								<ul>
+									<li>
+										<span>7일차</span><span>5코인</span>
+									</li>
+									<li>
+										<span>14일차</span><span>10코인</span>
+									</li>
+									<li>
+										<span>21일차</span><span>20코인</span>
+									</li>
+									<li>
+										<span>28일차</span><span>50코인</span>
+									</li>
+								</ul>
+							</div>
+						</div>
         </article>
 			</div>
     </section>
