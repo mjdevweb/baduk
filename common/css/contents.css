@@ -151,7 +151,6 @@ header.active{background-color: rgba(0,0,0, .83);}
 .sub-attendance{}
 .sub-notice{}
 .sub-news{}
-.sub-faq{}
 
 
 .sub-contents{min-height: 50vh; padding-bottom: 125px; background: #14141c url(../../images/common/sub-bg.jpg) 100% 0 / 100% no-repeat;}
@@ -164,6 +163,16 @@ header.active{background-color: rgba(0,0,0, .83);}
 .tab-top li{flex: 1; margin: 0 5px; text-align: center;}
 .tab-top li a{display: block; line-height: 62px; color:#4d4d4d; font-size: 20px; border-radius: 8px; border:1px solid #d9d9d9;}
 .tab-top li a.on{color:#fff; background-color: #8081ff;}
+
+.tab-sm{display: flex;}
+.tab-sm li{flex: 1; margin: 0 5px; text-align: center;}
+.tab-sm li a{display: block; line-height: 40px; color:#4d4d4d; font-size: 15px; border-radius: 8px; border:1px solid #d9d9d9;}
+.tab-sm li a.on{color:#fff; background-color: #8081ff;}
+
+.sub-mypage .tab-top li a.on{ background-color: #EF3E93;}
+.sub-mypage .tab-sm li a.on{ background-color: #EF3E93;}
+
+
 .tab-in{display: flex;}
 .tab-in li{flex: 1; margin: 0 5px; text-align: center;}
 .tab-in li a{display: block; line-height: 62px; color:#4d4d4d; font-size: 20px; border-radius: 8px; border:1px solid #d9d9d9;}
@@ -182,6 +191,13 @@ header.active{background-color: rgba(0,0,0, .83);}
 .board-head input, .board-head button{height:44px; background-color:#fff;}
 .board-head input.search-txt{padding:0 10px; border-radius: 4px; border:1px solid #ccc; background-color:#fff;}
 .board-head button.search-btn{width:60px; height:44px;color:#fff;background:#222;cursor:pointer; border-radius: 4px; }
+.board-head button.search-btn-line{width:100px; height:44px;color:#222;background:#fff;cursor:pointer; border-radius: 4px; border:1px solid #BCBCBC;}
+
+.sch-btn-wrap{display: flex; padding:30px 0 15px; justify-content: space-between;}
+.sch-btn-bx span{display: inline-block; padding-right: 10px; font-size: 15px;}
+.sch-btn-bx > div{display: inline-block; }
+.sch-btn-bx button{width: 72px; height: 36px; color: #999; font-size: 15px; border-radius: 4px; border: 1px solid #BCBCBC; background: #F1F3F5;}
+.sch-btn-bx button.on{color: #222; background: #FFF;}
 
 /* 게시판 > 목록 */
 .badge-notice{display:inline-block;margin:-2px 0 0 0;padding:3px 20px;font-size:12px;color:#fff;font-weight:300;text-align:center;background:#8081ff; vertical-align:middle; border-radius: 99px;}
@@ -272,8 +288,8 @@ header.active{background-color: rgba(0,0,0, .83);}
 .folder-list .a{ color: #fff; background:#d9d9d9; border: 2px solid #d9d9d9; }
 .folder-list.faq li{border-bottom:1px solid #dfe0e2; background:#fff;}
 .folder-list.faq li > p{cursor:pointer;}
-.folder-list.faq .faq-q{padding:20px 45px 20px 110px; color:#222; font-weight: 600; background:url(../../images/common/icon-arrow-down.png) right 20px top 27px / 12px no-repeat;}
-.folder-list.faq .faq-a{padding:20px 45px 20px 110px; color:#4d4d4d; background:#f9fafc;}
+.folder-list.faq .faq-q{padding:20px 45px 20px 20px; color:#222; font-weight: 600; background:url(../../images/common/icon-arrow-down.png) right 20px top 27px / 12px no-repeat;}
+.folder-list.faq .faq-a{padding:20px; color:#4d4d4d; background:#f9fafc;}
 .folder-list.faq .open .faq-q{background:url(../../images/common/icon-arrow-up.png) right 20px top 27px / 12px no-repeat;}
 
 /* 출석체크 */
@@ -313,3 +329,134 @@ header.active{background-color: rgba(0,0,0, .83);}
 .attend-notice > div span{display: inline-block; flex:1; padding: 0 10px;}
 .attend-notice > div span:last-child{text-align: right;}
 
+/***** 마이페이지 *****/
+.header-mypage{}
+
+header .inner a.logo-mypage{color: #000; font-weight: 700; font-size: 24px;}
+.header-mypage.active{background: #fff;}
+.header-mypage .header-nav > li span a{color: #000;}
+.sub-contents.sub-mypage{padding-top: 100px;background: #fff;}
+.sub-contents.sub-mypage .sub-title {padding: 50px 0;}
+.sub-contents.sub-mypage .sub-title h2{color:#222; font-size: 28px;}
+.sub-contents.sub-mypage .sub-title p{color:#4D4D4D; font-size: 16px; font-weight: 500;}
+
+/* 마이페이지 > 프로필 */
+.myintro{display: flex; border:1px solid red}
+.myinfo {padding:20px; background: #F9FAFC; border-radius: 8px;}
+.myinfo h3{padding: 0 0 20px 0;}
+.myinfoinner{display: flex; font-size:16px; font-weight:700; }
+.myinfoinner > div{padding-left:30px;}
+.myinfoinner dt{color:#4D4D4D; font-size: 18px;}
+.myinfoinner dd{padding-bottom: 6px;}
+.bxachieve ul{display: flex;}
+.bxachieve ul li{width:80px; height:80px; text-align: center; line-height:76px; border-radius: 6px; border: 2px solid #DDD; background: #FFF;}
+.bxachieve ul li + li{margin-left:8px;}
+
+.myinfoinner-btn{margin-top:40px;}
+.myinfoinner-btn li + li{padding-top: 10px;}
+.myinfoinner-btn li a{display: block; position: relative; padding:12px 40px 12px 12px; border-radius: 8px;text-align: right; border: 1px solid #DDD; background:#fff url('../../images/common/ico-arrow-right.svg') right 12px top 50% no-repeat;}
+.myinfoinner-btn li a strong{font-weight: 600;}
+.myinfoinner-btn li a i{position: absolute; top: 10px; left: 12px; display: block; width:30px; height:30px; background: url('../../images/common/ico-gold.png') 50% / 28px no-repeat;}
+
+.myinfo-list{width:calc(100% - 411px); margin-left: 18px;}
+.myinfo-list > div{position: relative; padding: 20px 20px 30px 20px; border-radius: 8px; border: 1px solid #DDD;}
+.myinfo-list > div + div{margin-top:18px;}
+.myinfo-list > div button{position: absolute; right: 20px; top: 20px; }
+.myinfo-list > div > h3{padding-left: 40px;}
+.myinfo-list > div > p{padding-top: 15px; text-align: right;}
+.item-mycoin h3{background: url('../../images/common/ic-line-coin.svg') 0 50% / 28px no-repeat;}
+.item-mymoney h3{background: url('../../images/common/ic-line-money.svg') 0 50% / 28px no-repeat;}
+.item-mypay h3{background: url('../../images/common/ic-line-pay.svg') 0 50% / 28px no-repeat;}
+.item-mypay ul {padding: 20px 0 0 40px;}
+.item-mypay ul li{display: flex; justify-content: space-between;}
+
+.text-my-sm{padding-top: 0; color: #999; font-size: 14px; font-weight: 500;}
+.text-sm{color: #4D4D4D; font-size: 13px;}
+.btn-mini{width: 80px; height: 36px; font-weight: 600; border:1px solid #BCBCBC; font-size: 15px; border-radius: 4px;}
+
+/* 마이페이지 > 회원정보변경 (비밀번호입력) */
+.mymodify-password{}
+.mymodify-password h3{font-size: 24px; padding-bottom: 10px;}
+.mymodify-password .bx-bg{text-align: center;}
+.mymodify-password .form-bx{padding: 40px 0 0; max-width: 400px; margin:0 auto; text-align: left;}
+.mymodify-password .form-bx input{width: 100%;}
+.mymodify-password .form-bx input.different{border: 1px solid #D32F2F;}
+.bx-password{position: relative;}
+.bx-password .pass{position: absolute; display: block; right: 12px; top:12px; width: 24px; height: 24px; background: url('../../images/common/ico-passoword-hide.png') no-repeat;  cursor: pointer;}
+.bx-password .pass.show{background: url('../../images/common/ico-passoword-show.png')}
+
+/* FORM */
+.bx-bg{padding:50px;border-radius: 8px; background: #F9FAFC;}
+.bx-line{padding:20px 40px; font-size: 15px; border-radius: 8px; border: 1px solid #DDD;}
+.form-bx label{display: block; padding: 0 4px 4px; font-size: 13px;}
+.form-bx input{height: 48px; padding: 12px 12px 12px 16px; font-size: 15px;border-radius: 4px;border: 1px solid #DDD;background: #FFF;}
+.form-warning{color: #D32F2F; font-size: 13px;}
+
+.btn-wrap{display: flex; margin-top: 30px; text-align: center;}
+.btn-wrap > .btn{flex: 1; font-size: 16px; line-height: 24px;}
+.btn-wrap > .btn + .btn{margin-left:5px;}
+.btn-wrap > .btn.btn-light{border-radius: 4px; border: 1px solid #BCBCBC; background: #FFF;}
+.btn-wrap > .btn.btn-dark{color:#fff; border-radius: 4px; border: 1px solid #222; background: #222;}
+.btn-wrap  a:hover{text-decoration: none;}
+
+.form-table h3{padding-bottom:24px; font-size: 20px;}
+.form-table + .form-table{padding-top:50px;}
+.form-table table{border-top: 1px solid #E9ECEF;}
+.form-table table th{width: 20%;  padding: 8px 24px; text-align: left; background-color: #F9FAFC; border-bottom: 1px solid #E9ECEF;}
+.form-table table td{position: relative; height: 64px; padding: 8px 24px; border-bottom: 1px solid #E9ECEF; }
+.form-table table .btn-mini{position: absolute; right:24px; top: 16px;}
+
+/* 회원탈퇴 */
+.withdrawal-bx li{padding-top:5px;color:#4D4D4D;}
+.withdrawal-bx .btn-wrap, .btn-wrap400{width:400px; margin: auto;}
+.withdrawal-notice{margin-top:50px; font-weight: 600; border-top: 1px solid #E9ECEF; }
+.withdrawal-notice .item{padding:24px; border-bottom: 1px solid #E9ECEF; }
+.withdrawal-notice .item li{display: flex; justify-content: space-between;}
+.withdrawal-list{padding: 24px 0 0 20%;}
+.withdrawal-ok .btn-wrap { width: 195px;}
+
+/* 기보 */
+.tbl-basic{border-top: 1px solid #E9ECEF;}
+.tbl-basic tr{border-bottom: 1px solid #E9ECEF;}
+.tbl-basic thead{background: #F9FAFC;}
+.tbl-basic thead th{padding:18px 10px;}
+.tbl-basic tbody td{padding:18px 10px; text-align: center; font-weight: 500;}
+.tbl-basic tbody td .line-text{color: #EF3E93; text-decoration: underline; }
+.ico-stone{width: 16px; height: 16px; margin-right: 5px; border:1px solid #DDD; border-radius: 50%;}
+.ico-black{background-color: #000;}
+.ico-white{background-color: #F2F2F2;}
+
+/* FAQ */
+.faq-sch{justify-content:space-between; text-align: center; }
+.faq-sch > *{}
+.faq-sch > input{margin-right: 10px; flex: 1 0 0;}
+.faq-sch .search-field{width: 200px;}
+.faq-cate-bx{position: relative; padding:0 0 15px; text-align: center;}
+.faq-cate-bx span{display: inline-block; padding-right: 10px; }
+.faq-cate-bx > div{display: inline-block; }
+.faq-cate-bx button{min-width: 60px; height: 24px; padding:0 12px; color: #fff; font-size: 14px; border-radius: 99px; background: #56576F;}
+.sch-in-in{position: absolute; right:0; font-weight: 600;}
+.faq-more-text{padding:30px 0 0; color: #4D4D4D; font-size: 14px; text-align: right;}
+.faq-more-text .btn-mini{display: inline-block; margin-left:5px; text-align: center; background-color: #fff; line-height: 36px}
+
+/* 1:1문의 */
+.inquiry-bx .folder-list{border-top:1px solid #DDD; }
+.inquiry-bx .faq-q{display: flex;}
+.inquiry-bx .faq-q .date{padding: 0 10px 0 0 ; font-weight: 500;}
+.inquiry-bx .faq-a > div{display: flex; padding-left: 20px; padding-right: 20px; color: #4D4D4D;}
+.inquiry-bx .faq-a > div > span{width: 120px;}
+.inquiry-bx .faq-a > div > .atxt-q{width: calc(100% - 120px);}
+.atxt{padding-top:50px; color: #222; font-weight: 500;} 
+.inquiry-bx .folder-list.faq .faq-q{background: none}
+.inquiry-bx .folder-list.faq .faq-q::after{content: '접수'; position: absolute; right: 12px; top: 20px; display: block; padding-right: 30px; color: #EF3E93; font-size: 16px; background:url(../../images/common/icon-arrow-up2.svg) 100% 50% / 24px no-repeat;}
+.inquiry-bx .folder-list.faq .inq-complete .faq-q::after{content: '답변완료'; color: #999;}
+
+.inquiry-form input{width: 100%; height: 48px; padding: 12px 12px 12px 16px; font-size: 15px; border-radius: 4px;border: 1px solid #DDD;background: #FFF;}
+.inquiry-form select{width: 100%; height: 48px; padding: 12px 12px 12px 16px; font-size: 15px; border-radius: 4px;border: 1px solid #DDD;background: #FFF;}
+.tbl-basic-v{border-top: 1px solid #E9ECEF;}
+.tbl-basic-v tr{border-bottom: 1px solid #E9ECEF;}
+.tbl-basic-v th{padding:10px 24px; text-align: left; background: #F9FAFC;}
+.tbl-basic-v td{padding:10px 24px; font-weight: 500;}
+.tbl-basic-v td textarea{width: 100%; height: 200px; padding: 12px; font-size: 15px; border-radius: 4px;border: 1px solid #DDD;background: #FFF;}
+.tbl-basic-v td .dv{display: flex; }
+.tbl-basic-v td .dv button{width: 180px; margin-left: 10px; font-weight: 600; border-radius: 4px; border: 1px solid #BCBCBC;}

@@ -53,6 +53,17 @@ $(function(){
 		}
 	});
   
+  // 마이페이지 >  본인확인(비밀번호입력)
+  $('.bx-password button').click(function () {
+    var x = document.getElementById("password-bx");
+    $(this).toggleClass('show');
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }    
+  });
+
   
 
 });
