@@ -4,10 +4,15 @@
 @import url("swiper.min.css");
 
 
+/* 아래 스타일 이동 필욜함 */
 .tit-18{font-size:18px;}
 .c-point{color:#EF3E93;}
 .c-dark{color:#222;}
 .c-gray{color:#444;}
+
+.dflex{display:flex;}
+.btn.w120{width: 120px; }
+.btn.w-auto{width: auto; padding: 12px 15px;}
 
 /*input checkbox 커스텀 */
 input[type="checkbox"] { 

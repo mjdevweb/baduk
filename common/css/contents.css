@@ -166,7 +166,7 @@ header.active{background-color: rgba(0,0,0, .83);}
 
 .tab-sm{display: flex;}
 .tab-sm li{flex: 1; margin: 0 5px; text-align: center;}
-.tab-sm li a{display: block; line-height: 40px; color:#4d4d4d; font-size: 15px; border-radius: 8px; border:1px solid #d9d9d9;}
+.tab-sm li a{display: block; line-height: 40px; color:#222; font-size: 15px; border-radius: 8px; border:1px solid #d9d9d9; background-color: #fff;}
 .tab-sm li a.on{color:#fff; background-color: #8081ff;}
 
 .sub-mypage .tab-top li a.on{ background-color: #EF3E93;}
@@ -187,7 +187,7 @@ header.active{background-color: rgba(0,0,0, .83);}
 /* 게시판 > 검색 */
 .borad-tit{ margin-bottom: 50px; font-size: 30px; font-weight: 600; color: #222; }
 .board-head{display:flex; padding:0 0 28px; color:#666; font-size:16px; text-align:right;justify-content: flex-end;}
-.board-head select{width:100px; height:44px; margin-right:10px; background-color:#fff; border:1px solid #ccc; border-radius: 4px; }
+.board-head select{width:100px; height:44px; margin-right:10px; background-color:#fff; border:1px solid #ccc; border-radius: 4px; text-indent: .5em;}
 .board-head input, .board-head button{height:44px; background-color:#fff;}
 .board-head input.search-txt{padding:0 10px; border-radius: 4px; border:1px solid #ccc; background-color:#fff;}
 .board-head button.search-btn{width:60px; height:44px;color:#fff;background:#222;cursor:pointer; border-radius: 4px; }
@@ -288,9 +288,9 @@ header.active{background-color: rgba(0,0,0, .83);}
 .folder-list .a{ color: #fff; background:#d9d9d9; border: 2px solid #d9d9d9; }
 .folder-list.faq li{border-bottom:1px solid #dfe0e2; background:#fff;}
 .folder-list.faq li > p{cursor:pointer;}
-.folder-list.faq .faq-q{padding:20px 45px 20px 20px; color:#222; font-weight: 600; background:url(../../images/common/icon-arrow-down.png) right 20px top 27px / 12px no-repeat;}
+.folder-list.faq .faq-q{padding:20px 45px 20px 20px; color:#222; font-weight: 600; background:url(../../images/common/ico-arrow-down.png) right 20px top 27px / 12px no-repeat;}
 .folder-list.faq .faq-a{padding:20px; color:#4d4d4d; background:#f9fafc;}
-.folder-list.faq .open .faq-q{background:url(../../images/common/icon-arrow-up.png) right 20px top 27px / 12px no-repeat;}
+.folder-list.faq .open .faq-q{background:url(../../images/common/ico-arrow-up.png) right 20px top 27px / 12px no-repeat;}
 
 /* 출석체크 */
 .sub-contents.sub-attendance{background-image: url(../../images/common/sub-bg-attendance.jpg); background-size:cover; }
@@ -340,9 +340,9 @@ header .inner a.logo-mypage{color: #000; font-weight: 700; font-size: 24px;}
 .sub-contents.sub-mypage .sub-title h2{color:#222; font-size: 28px;}
 .sub-contents.sub-mypage .sub-title p{color:#4D4D4D; font-size: 16px; font-weight: 500;}
 
-/* 마이페이지 > 프로필 */
-.myintro{display: flex; border:1px solid red}
-.myinfo {padding:20px; background: #F9FAFC; border-radius: 8px;}
+/* 마이페이지 > 프로필영역 */
+.myintro{display: flex; padding:20px; justify-content: space-between;}
+.myinfo {padding:20px; background: #F9FAFC; border-radius: 8px; }
 .myinfo h3{padding: 0 0 20px 0;}
 .myinfoinner{display: flex; font-size:16px; font-weight:700; }
 .myinfoinner > div{padding-left:30px;}
@@ -372,7 +372,48 @@ header .inner a.logo-mypage{color: #000; font-weight: 700; font-size: 24px;}
 
 .text-my-sm{padding-top: 0; color: #999; font-size: 14px; font-weight: 500;}
 .text-sm{color: #4D4D4D; font-size: 13px;}
-.btn-mini{width: 80px; height: 36px; font-weight: 600; border:1px solid #BCBCBC; font-size: 15px; border-radius: 4px;}
+.btn-mini{width: 80px; height: 36px; font-weight: 600; border:1px solid #BCBCBC; font-size: 15px; border-radius: 4px; background-color: #fff;}
+
+/* 마이페이지 > 프로필 */
+.sub-mypage .inner{max-width:1060px;}
+.myprofile.myintro{display:block; position:relative; padding:20px; background: #F9FAFC; border-radius: 8px;}
+.myprofile.myintro .dflex{border-radius: 8px; background: #F9FAFC; justify-content: space-between;}
+.myprofile.myintro .myinfo{padding: 0;}
+.myprofile figure{border:1px solid #7171EB; border-radius:50%;}
+.myprofile.myintro .btn-bx{position:absolute; right:20px; top:20px;}
+.myprofile.myintro dl dt{width:68px;}
+.myprofile.myintro dl dt,
+.myprofile.myintro dl dd{display:inline-block; font-size: 16px; vertical-align:top;}
+.myinfo2{width:480px; margin-top: 5px; }
+.tab-myinfo2-con{margin-top: 15px; padding:12px 24px; background: #FFF; border-top:1px solid #E9ECEF; border-bottom:1px solid #E9ECEF;}
+.tab-myinfo2-con th{padding: 4px 15px; font-weight: 500; text-align: left;}
+
+/* 마이페이지 > 캐릭터, 배지 */
+.mycharacter{}
+.select-btn-warp ul{display: flex; flex-wrap: wrap; margin: 0 -5px;}
+.select-btn-warp ul li{position: relative; margin: 5px;}
+.select-btn{width: 246px; height: 246px; border-radius: 20px; border: 5px solid #DDD; background: #EFF3FA; transition: .3s;}
+.select-btn:hover{border: 5px solid #EF3E93;}
+.item-select::after{content: ''; position: absolute; display: block; width: 60px; height: 60px; background: url(../../images/common/ico-chk-item-pink.svg); left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.item-select button{border: 5px solid #EF3E93;}
+.item-lock::after{content: ''; position: absolute; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.60) url(../../images/common/ico-lock.png) 50% / 60px no-repeat; left: 0; top:0;z-index: 1; border-radius: 20px; }
+
+/* 마이페이지 > 결제 */
+.my-payment-info{display: flex; margin-bottom:50px; border-radius: 8px; border: 1px solid #DDD;}
+.my-payment-info > div{flex:1; padding: 30px 40px;}
+.my-payment-info > div + div{border-left: 1px solid #ddd;}
+.my-payment-info > div .btn{padding: 0;}
+.my-payment-info > div h3{padding-bottom: 40px;}
+.my-payment-info > div h3 .q-ico{ width: 24px; height: 24px; background:url(../../images/common/ico-qs.png) 50% / 100% no-repeat; font-size: 0; vertical-align: text-bottom;}
+.my-payment-info > div ul{padding-bottom: 25px;}
+.my-payment-info > div li span{font-weight: 500;}
+
+.my-pay-info2{position: relative;}
+.my-pay-info3{position: relative; font-weight: 700;}
+.my-pay-info1 ul li,
+.my-pay-info3 ul li{display: flex; margin-bottom: 10px; justify-content: space-between;}
+.my-pay-info2 .btn{position: absolute; left: 40px; bottom: 30px;}
+.my-pay-info3 .btn{position: absolute; right: 40px; top: 30px;}
 
 /* 마이페이지 > 회원정보변경 (비밀번호입력) */
 .mymodify-password{}
@@ -448,7 +489,7 @@ header .inner a.logo-mypage{color: #000; font-weight: 700; font-size: 24px;}
 .inquiry-bx .faq-a > div > .atxt-q{width: calc(100% - 120px);}
 .atxt{padding-top:50px; color: #222; font-weight: 500;} 
 .inquiry-bx .folder-list.faq .faq-q{background: none}
-.inquiry-bx .folder-list.faq .faq-q::after{content: '접수'; position: absolute; right: 12px; top: 20px; display: block; padding-right: 30px; color: #EF3E93; font-size: 16px; background:url(../../images/common/icon-arrow-up2.svg) 100% 50% / 24px no-repeat;}
+.inquiry-bx .folder-list.faq .faq-q::after{content: '접수'; position: absolute; right: 12px; top: 20px; display: block; padding-right: 30px; color: #EF3E93; font-size: 16px; background:url(../../images/common/ico-arrow-up2.svg) 100% 50% / 24px no-repeat;}
 .inquiry-bx .folder-list.faq .inq-complete .faq-q::after{content: '답변완료'; color: #999;}
 
 .inquiry-form input{width: 100%; height: 48px; padding: 12px 12px 12px 16px; font-size: 15px; border-radius: 4px;border: 1px solid #DDD;background: #FFF;}
