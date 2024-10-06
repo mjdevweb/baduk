@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- 스타일 -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="canonical" href="" />
+	<link rel="icon" href="/images/common/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="/images/common/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="../common/css/style.css">
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/css/contents.css">
+
+	<title>플레이바둑</title>
+
+	<meta name="description" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- 스크립트 -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../common/js/script.ui.js"></script>
+</head>
+<body>
+
+<!-- 팝업 : popup-wrap으로 묶어 줘야함 'popup-wrap show'일 때 팝업노출 -->
+<!-- 버튼(btn-bx)은 갯수대로 자동으로 너비 조정, 색상 : 취소btn-cancel, 확인(긍정)btn-confirm-->
+
+<!-- popup-wrap 팝업(기본) { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<h3>닉네임 변경</h3>
+		<p class="txt tcenter">생년월일이 일치하지 않습니다.</p>
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">확인</button></li>
+				<li><button class="btn btn-confirm">닉네임변경</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<p class="txt tcenter">생년월일이 일치하지 않습니다.</p>
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<p class="txt tcenter">선택하신 캐릭터를 구입하시겠습니까?</p>
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<h3>닉네임 변경</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx">
+      <input type="text" placeholder="닉네임 입력(한글, 영문, 숫자 사용 가능)">
+      <ul class="bg mgt20">
+        <li>• 30일에 1회 변경할 수 있습니다.</li>
+        <li>• 영문은 소문자만 입력합니다.</li>
+      </ul>
+    </div>    
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-confirm">닉네임변경</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<h3>이메일 주소 입력</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx">
+      <input type="text" placeholder="이메일 주소">
+      <select name="" id="" class="mgt10">
+        <option value="">직접입력</option>
+        <option value="">google.com</option>
+        <option value="">naver.com</option>
+        <option value="">daum.net</option>
+      </select>
+    </div>    
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner">
+		<h3>휴대폰 번호 입력</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx">
+      <p class="bg"><img src="./images/common/ico-note.svg" alt=""> 인증번호를 전송하였습니다.</p>
+      <div>
+        <p class="certify-num mgt10"><input type="text" placeholder="휴대폰 번호 입력"><button type="button" class="btn">인증하기</button></p>
+        <p class="time-num mgt10"><input type="text" placeholder="인증번호 입력"> <span class="time">3:00</span></p>
+      </div>
+    </div>
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner wide">
+		<h3>코인 충전</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx coin-charge">
+      <p>결제할 금액을 입력해주세요.</p>
+      <div class="bx01">
+        <p class="mgt10"><input type="text" placeholder="입력">원</p>
+        <p class="mgt10">
+					<button type="button" class="btn">10,000원</button> <button type="button" class="btn">50,000원</button> <button type="button" class="btn">100,000원</button> <button type="button" class="btn">500,000원</button>
+				</p>
+      </div><!-- .bx01 -->
+      <div class="bx02">
+				<hr class="line">
+				<h3>내 코인</h3>
+				<ul>
+					<li><span>보유중인 코인</span> <strong>100,000 P</strong></li>
+					<li><span>결제 후 코인</span> <strong><span class="color-point">500,000</span> P</strong></li>
+					<li class="last"><span>결제 금액</span> <strong><span class="color-point">500,000</span> 원</strong></li>
+				</ul>
+      </div><!-- .bx02 -->
+    </div><!-- .popup-bx -->
+		<div class="popup-foot">
+      <p class="pb20">선택하신 금액을 결제 하시겠습니까?</p>
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">결제</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap ">
+	<div class="popup-inner wide">
+    <button class="popclose">닫기</button>
+    <div class="popup-bx withdrawal-ing tcenter">
+			<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+				<path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#C0C0C0"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M30.0011 18.4615C28.7265 18.4615 27.6934 19.4947 27.6934 20.7692V34.6154C27.6934 35.8899 28.7265 36.9231 30.0011 36.9231C31.2756 36.9231 32.3087 35.8899 32.3087 34.6154V20.7692C32.3087 19.4947 31.2756 18.4615 30.0011 18.4615ZM30.0011 40C28.7265 40 27.6934 41.0331 27.6934 42.3077C27.6934 43.5822 28.7265 44.6153 30.0011 44.6153C31.2756 44.6153 32.3087 43.5822 32.3087 42.3077C32.3087 41.0331 31.2756 40 30.0011 40Z" fill="white"/>
+				</svg>
+      <p>탈퇴 처리 중인 아이디입니다 <br/>탈퇴 신청 취소 후 이용 가능합니다.</p>
+    </div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-confirm">탈퇴 신청 취소</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap ">
+	<div class="popup-inner wide">
+    <button class="popclose">닫기</button>
+    <div class="popup-bx withdrawal-ing">
+			<p>해당 상품의 구매를 취소하시겠습니가?</p>
+			<div class="bg mgt20">
+				<dl>
+					<dt>구매 취소 안내 사항</dt>
+					<dd>
+						<ol>
+							<li>구매 취소가 완료되면 사용하신 재화가 자동 복구되며 보유하고 계시던 해당 아이템은 자동 회수됩니다.</li>
+							<li>구매 휘소 처리가 완료되면 다시 이전상태 되돌릴 수 없습니다. (아이템을 구매하시길 원하실 경우 상점을 통해 재재구매를 진행해주시기 바랍니다.)</li>
+						</ol>
+					</dd>
+				</dl>
+			</div>
+    </div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner wide">
+		<h3>결제한도 설정</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx coin-charge">
+      <div class="bx02">
+				<ul>
+					<li><span>현재 결제한도</span> <strong>100,000 P</strong></li>
+					<li><span>변경 결제한도</span> <strong><span class="color-point">500,000</span> P</strong></li>
+				</ul>
+      </div><!-- .bx02 -->
+			<hr class="line">
+      <p>변결할 금액을 입력해주세요.</p>
+      <div class="bx01">
+        <p class="mgt10"><input type="text" placeholder="입력">원</p>
+      </div><!-- .bx01 -->
+			<div class="bx02 bg mgt20">
+				<ul>
+					<li><span>이번달 결제금액</span> <strong>0 원</strong></li>
+					<li><span>이번달 결제한도 변경 횟수</span> <strong>2 회</strong></li>
+				</ul>
+      </div><!-- .bx02 -->	
+		</div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">결제한도 변경</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap">
+	<div class="popup-inner wide">
+		<h3>해지예약</h3>
+    <button class="popclose">닫기</button>
+		<div class="tcenter">
+			<p class="fwb">회원님, 이용중에 불편함이 있으셨나요?</p>
+			<p class="pt10 pb20">지금 해지예약을 하시면 다음 자동결제일로부터 <br>아래 혜택을 받으실 수 없습니다.</p>
+		</div>
+    <div class="popup-bx ">
+      <div class="bg">
+				<p class="fwb">이용권타이틀</p>
+				<div>혜택내용 입력<br/>
+					혜택내용 입력<br/>
+					혜택내용 입력<br/>
+					혜택내용 입력
+				</div>
+      </div><!-- .bx02 -->
+		</div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<p class="pb20">정말 해지하시겠습니까?</p>
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">해지예약하기</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap ">
+	<div class="popup-inner wide">
+		<h3>테두리 변경</h3>
+    <button class="popclose">닫기</button>
+		<div class="tcenter">
+			<p class="fwb">회원님, 이용중에 불편함이 있으셨나요?</p>
+			<p class="pt10 pb20">지금 해지예약을 하시면 다음 자동결제일로부터 <br>아래 혜택을 받으실 수 없습니다.</p>
+		</div>
+    <div class="popup-bx ">
+			s내용
+		</div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">적용</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap ">
+	<div class="popup-inner wide">
+		<h3>본인확인</h3>
+    <button class="popclose">닫기</button>
+		<div class="tcenter">
+			<p class="pt10 pb20">회원님의 개인정보를 안전하게 보호하기 위해 <br>비밀번호를 다시 한번 확인합니다.</p>
+		</div>
+    <div class="popup-bx ">
+			<label for="pass">비밀번호</label>
+			<input type="text" placeholder="비밀번호 입력" id="pass"> 
+			<p class="txt-warning pt5">비밀번호를 잘못 입력하셨습니다.</p>
+		</div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">확인</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+<!-- popup-wrap 팝업 { -->
+<div class="popup-wrap show">
+	<div class="popup-inner wide">
+		<h3>비밀번호 변경</h3>
+    <button class="popclose">닫기</button>
+    <div class="popup-bx ">
+			<div class="item">
+				<label for="pass01">기존 비밀번호</label>
+				<input type="text" placeholder="비밀번호 입력" id="pass01"> 
+			</div>
+			<div class="item mgt20">
+				<label for="pass02">새 비밀번호</label>
+				<input type="text" placeholder="비밀번호 입력" id="pass02"> 
+			</div>
+			<div class="item mgt20">
+				<label for="pass03">새 비밀번호</label>
+				<input type="text" placeholder="비밀번호 입력" id="pass03"> 
+				<p class="txt-warning pt5">일치하지 않습니다.</p>
+			</div>
+      <ul class="bg mgt20">
+        <li>• 8~15자리 영문, 숫자 특수문자 조합으로 만들어 주세요.</li>
+				<li>• 아이디, 연속 되거나 동일한 숫자는 사용할 수 없습니다.</li>
+      </ul>			
+		</div><!-- .popup-bx -->
+		<div class="popup-foot">
+			<p class="input-item chk-item tleft pb30">
+				<input type="checkbox" id="agree_logout" title="비밀번호 변경 후 로그아웃 동의" name="agree" value="Y" class="required">
+				<label for="agree_logout">비밀번호 변경 후 로그아웃합니다.</label>
+			</p>
+			<ul class="btn-bx">
+				<li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">적용</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup-wrap } -->
+
+
+
+
+
+
+
+
+</body>
+</html>

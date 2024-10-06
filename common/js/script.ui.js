@@ -64,6 +64,14 @@ $(function(){
     }    
   });
 
+  // 팝업
+  
+	// 팝업CLOSE
+	$('.popclose').click(function (e) {
+		$('.popup-wrap').removeClass('show');
+		$('.popup-wrap').hide();
+		$('body').removeClass('scroll-hidden').off('scroll touchmove mousewheel');
+	});
   
 
 });
