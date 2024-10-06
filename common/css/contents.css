@@ -186,7 +186,7 @@ header.active{background-color: rgba(0,0,0, .83);}
 
 /* 게시판 > 검색 */
 .borad-tit{ margin-bottom: 50px; font-size: 30px; font-weight: 600; color: #222; }
-.board-head{display:flex; padding:0 0 28px; color:#666; font-size:16px; text-align:right;justify-content: flex-end;}
+.board-head{display:flex; padding:0; color:#666; font-size:16px; text-align:right;justify-content: flex-end;}
 .board-head select{width:100px; height:44px; margin-right:10px; background-color:#fff; border:1px solid #ccc; border-radius: 4px; text-indent: .5em;}
 .board-head input, .board-head button{height:44px; background-color:#fff;}
 .board-head input.search-txt{padding:0 10px; border-radius: 4px; border:1px solid #ccc; background-color:#fff;}
@@ -539,4 +539,17 @@ background: #F3F3F3; line-height: 0;}
 .my-achievement .bxright .item .progress em{
   position: absolute; top:-15px; right:0; color: #F58D30; font-size: 14px;}
 
-  .my-achievement .bxright .item > div{width:calc(100% - 180px)}
+.my-achievement .bxright .item > div{width:calc(100% - 180px);}
+
+/* 마이페이지>구매현황 */
+.subscription-wrap > h3.pb30{display: flex; justify-content: space-between;}
+.subscription-bx {display: flex; margin-bottom: 50px; justify-content: space-between;}
+.subscription-bx .prd-item{display: flex; width: calc(50% - 10px);}
+.subscription-bx .prd-item .left{display: flex; justify-content: center; align-items: center; width: 76%; padding: 41px 13px; color: #4D4D4D; text-align: center; font-size: 16px; border-radius: 16px; border: 2px solid #4B4B68; background: #FFF;}
+.subscription-bx .prd-item .right{display: flex; width: 24%; color: #fff; border-radius: 16px;background: #4B4B68;justify-content: center;align-items: center; text-align: center;}
+.subscription-bx .prd-item.subscription-ing .left{ color: #20C461; font-family: "Jalnan 2"; font-size: 24px;  border: 2px solid #20C461; background: #FFF;}
+.subscription-bx .prd-item.subscription-ing .right{color: #fff; background: #20C461;}
+
+
+
+

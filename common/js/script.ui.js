@@ -65,11 +65,13 @@ $(function(){
   });
 
   // 팝업
+  $('.btn-popopen').click(function (e) {
+		$('.popup-wrap').addClass('show');
+	});
   
 	// 팝업CLOSE
-	$('.popclose').click(function (e) {
+	$('.popclose, .btn-cancel').click(function (e) {
 		$('.popup-wrap').removeClass('show');
-		$('.popup-wrap').hide();
 		$('body').removeClass('scroll-hidden').off('scroll touchmove mousewheel');
 	});
   

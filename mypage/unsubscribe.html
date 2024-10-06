@@ -1,3 +1,4 @@
+<!-- 구독정보 > 구독현황 -->
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
@@ -62,7 +63,7 @@
 						<ul>
 							<li><a href="#">결제내역</a></li>
 							<li><a href="#">구매내역</a></li>
-							<li><a href="#">결제한도설정</a></li>
+							<li><a href="#">구매현황</a></li>
 						</ul>
 					</div>
 				</li>
@@ -109,46 +110,35 @@
 	</header>
 	<!-- 마이페이지 헤더 } -->
 
-	<!-- 마이페이지 > 결제한도설정 시작 } -->
+	<!-- 마이페이지 > 구독해지 시작 } -->
 	<main class="sub-contents sub-mypage">
 		<section class="inner">
       <div class="sub-title">
-        <h2>결제 한도 설정</h2>
-				<p>월 최대 결제 한도 금액을 설정할 수 있습니다.</p>
+        <h2>구독 해지</h2>
+				<p>현재 적용중인 구독상품을 해지하실 수 있습니다.</p>
 			</div>
-      <div class="my-payment-wrap">
+      <div class="my-payment-wrap subscription-wrap">
+        <h3 class="pb30">보유 중인 상품 <button type="button" class="btn" title="조회하기">구독 상품 전체 보기</button></h3>
 
-        <div class="my-payment-info">
-          <div class="my-pay-info1">
-            <h3>월 결제 한도 관리</h3>
-            <ul>
-              <li><p><strong class="c-point">700,000</strong> 원</p> </li>
-            </ul>
-            <button class="btn btn-mini w120 btn-popopen">결제한도 설정</button>
+        <div class="subscription-bx">
+          <div class="prd-item subscription-ing">
+            <p class="left">ALL-PASS <br> 구독 서비스</p>
+            <p class="right">잔여일<br>10일</p>
           </div>
-          <div class="my-pay-info3">
-            <h3>결제 한도 현황</h3>
-            <ul>
-              <li><span>누적 결제 금액</span> <p><strong class="c-point">500,000</strong> 원</p></li>
-              <li><span>남은 한도</span> <p><strong class="c-point">200,000</strong> 원</p></li>
-            </ul>
+          <div class="prd-item">
+            <p class="left">현재 적용중인 구독상품이 <br>없습니다.</p>
+            <p class="right">-</p>
           </div>
         </div>
-        
-        <!-- tab { -->
-        <ul class="tab-top">
-          <li><a href="set-monthly.html" class="on">월 별 이용금액</a></li>
-          <li><a href="set-limit-history.html" class="">한도 변경 이력</a></li>
-        </ul>
-        <!-- tab } -->
 
+        <h3>구독 상품 결제 내역</h3>
         <article class="sch-btn-wrap">
           <div class="sch-btn-bx">
             <span>조회 기간</span>
             <div>
-              <button class="on">당월</button>
-              <button>3개월</button>
+              <button class="on">3개월</button>
               <button>6개월</button>
+              <button>1년</button>
             </div>
           </div>
           <div  class="sch-btn-sort">
@@ -166,26 +156,38 @@
           <table width="100%">
             <thead>
               <tr>
-                <th>이용 월</th>
-                <th>기간</th>
+                <th>결제 일자</th>
+                <th>구독 상품명</th>
+                <th>결제 수단</th>
                 <th>결제 금액</th>
+                <th>만료 일자</th>
+                <th>구독 해지</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>2024 / 06</td>
-                <td>2024.06.01 ~ 2024.06.30</td>
-                <td>100,000원</td>
+                <td>2024.06.12  10:20</td>
+                <td>ALL플러스</td>
+                <td>신용카드</td>
+                <td>63,000원</td>
+                <td class="c-point">2024.07.11  10:30</td>
+                <td><button class="btn-mini">해지 신청</button></td>
               </tr>
               <tr>
-                <td>2024 / 06</td>
-                <td>2024.06.01 ~ 2024.06.30</td>
-                <td>100,000원</td>
+                <td>2024.06.12  10:20</td>
+                <td>ALL플러스</td>
+                <td>신용카드</td>
+                <td>63,000원</td>
+                <td>2024.07.11  10:30</td>
+                <td>해지완료</td>
               </tr>
               <tr>
-                <td>2024 / 06</td>
-                <td>2024.06.01 ~ 2024.06.30</td>
-                <td>100,000원</td>
+                <td>2024.06.12  10:20</td>
+                <td>ALL플러스</td>
+                <td>신용카드</td>
+                <td>63,000원</td>
+                <td>2024.07.11  10:30</td>
+                <td>해지완료</td>
               </tr>
             </tbody>
           </table>
@@ -206,42 +208,8 @@
       </div><!-- .my-payment-wrap -->
     </section>
 
-
-    <!-- popup-wrap 팝업 { -->
-    <div class="popup-wrap">
-      <div class="popup-inner wide">
-        <h3>결제한도 설정</h3>
-        <button class="popclose">닫기</button>
-        <div class="popup-bx coin-charge">
-          <div class="bx02">
-            <ul>
-              <li><span>현재 결제한도</span> <strong>100,000 P</strong></li>
-              <li><span>변경 결제한도</span> <strong><span class="color-point">500,000</span> P</strong></li>
-            </ul>
-          </div><!-- .bx02 -->
-          <hr class="line">
-          <p>변결할 금액을 입력해주세요.</p>
-          <div class="bx01">
-            <p class="mgt10"><input type="text" placeholder="입력">원</p>
-          </div><!-- .bx01 -->
-          <div class="bx02 bg mgt20">
-            <ul>
-              <li><span>이번달 결제금액</span> <strong>0 원</strong></li>
-              <li><span>이번달 결제한도 변경 횟수</span> <strong>2 회</strong></li>
-            </ul>
-          </div><!-- .bx02 -->	
-        </div><!-- .popup-bx -->
-        <div class="popup-foot">
-          <ul class="btn-bx">
-            <li><button class="btn btn-cancel">취소</button><button class="btn btn-confirm">결제한도 변경</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- popup-wrap } -->
-
 	</main>
-	<!-- 마이페이지 > 결제한도설정 끝 } -->
+	<!-- 마이페이지 > 구독해지 끝 } -->
   
   <!-- 푸터 { -->
 	<footer id="inFooter">
